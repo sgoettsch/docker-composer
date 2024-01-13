@@ -1,4 +1,4 @@
-FROM php:8.0-cli-alpine
+FROM php:8.0-cli-alpine@sha256:d3cd7dd3d043b0de163d36e9e8837f8a76770b970ad4df4e737a215793e9070b
 
 RUN apk update
 RUN apk add git zip libzip-dev
