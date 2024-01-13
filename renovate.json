@@ -14,15 +14,10 @@
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
   "dependencyDashboard": true,
-  "regexManagers": [
+  "packageRules": [
     {
-      "enabled": false,
-      "matchDatasources": [
-        "docker"
-      ],
-      "matchUpdateTypes": [
-        "major"
-      ]
+      "matchUpdateTypes": ["major"],
+      "enabled": false
     }
   ]
 }
