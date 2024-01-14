@@ -16,7 +16,7 @@
   "dependencyDashboard": true,
   "packageRules": [
     {
-      "matchUpdateTypes": ["major"],
+      "matchUpdateTypes": ["major", "minor"],
       "enabled": false
     }
   ]
