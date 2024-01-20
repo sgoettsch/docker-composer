@@ -45,5 +45,5 @@ jobs:
           push: true
           tags: "ghcr.io/sgoettsch/docker-composer:latest${{ matrix.image-tag-suffix }}"
           platforms: linux/amd64,linux/arm64
-          cache-from: type=gha, scope=${{ matrix.docker-file }}
-          cache-to: type=gha, scope=${{ matrix.docker-file }}
+          cache-from: type=gha, scope=${{ matrix.image-tag-suffix }}
+          cache-to: type=gha, scope=${{ matrix.image-tag-suffix }}
