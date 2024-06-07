@@ -26,6 +26,12 @@
       "enabled": false
     },
     {
+      "matchPackageNames": ["php"],
+      "matchUpdateTypes": ["patch"],
+      "automerge": true,
+      "automergeType": "branch"
+    },
+    {
       "matchUpdateTypes": ["pin", "digest"],
       "automerge": true,
       "automergeType": "branch"
