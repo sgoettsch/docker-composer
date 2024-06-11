@@ -18,7 +18,8 @@
   "prConcurrentLimit": 0,
   "dependencyDashboard": false,
   "separateMinorPatch": true,
-  "platformAutomerge": true,
+  "platformAutomerge": false,
+  "automergeType": "branch",
   "packageRules": [
     {
       "matchPackageNames": ["php"],
