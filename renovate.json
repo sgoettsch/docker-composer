@@ -27,7 +27,7 @@
       "enabled": false
     },
     {
-      "matchPackageNames": ["php"],
+      "matchPackageNames": ["php", "composer/composer"],
       "matchUpdateTypes": ["patch"],
       "automerge": true,
       "automergeType": "branch"
