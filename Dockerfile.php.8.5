@@ -1,0 +1,13 @@
+FROM php:8.5.0-cli-alpine
+
+RUN apk update
+RUN apk add git zip libzip-dev
+RUN docker-php-ext-install pdo_mysql
+RUN docker-php-ext-install zip
+
+# Composer
+# renovate: datasource=github-tags depName=composer/composer versioning=semver
+ENV COMPOSER_VERSION="2.9.2"
+RUN curl -sfL https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
+RUN chmod +x /usr/bin/composer
+RUN composer self-update --clean-backups ${COMPOSER_VERSION}
